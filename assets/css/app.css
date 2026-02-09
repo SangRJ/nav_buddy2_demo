@@ -104,3 +104,6 @@
 [data-phx-session], [data-phx-teleported-src] { display: contents }
 
 /* This file is for your main application CSS */
+
+/* Hide elements with x-cloak until Alpine.js initializes */
+[x-cloak] { display: none !important; }

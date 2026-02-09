@@ -13,7 +13,7 @@ config :nav_buddy2_demo,
 
 # config/config.exs
 config :nav_buddy2,
-  icon_renderer: &NavBuddy2DemoWeb.NavIcon.render/1,
+  icon_renderer: &NavBuddy2DemoWeb.CoreComponents.icon/1,
   permission_resolver: NavBuddy2Demo.NavPermissions
 
 # Configures the endpoint
