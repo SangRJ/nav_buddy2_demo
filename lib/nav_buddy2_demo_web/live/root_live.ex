@@ -3,12 +3,6 @@ defmodule NavBuddy2DemoWeb.RootLive do
 
   @impl true
   def mount(_params, _session, socket) do
-    user = %NavBuddy2Demo.User{
-      id: 1,
-      name: "Demo Admin",
-      permissions: [:view_dashboard, :manage_users, :admin]
-    }
-
     code_example = """
     defmodule MyAppWeb.Navigation do
       alias NavBuddy2.{Sidebar, Section, Item}
