@@ -17,7 +17,12 @@ defmodule NavBuddy2DemoWeb.Router do
   scope "/", NavBuddy2DemoWeb do
     pipe_through :browser
 
-    live "/", RootLive
+    live_session :default, on_mount: NavBuddy2DemoWeb.NavBacking, layout: {NavBuddy2DemoWeb.Layouts, :app} do
+      live "/", RootLive
+
+      live "/projects/:type", DemoPageLive, :projects
+      live "/settings/:type", DemoPageLive, :settings
+    end
   end
 
   # Other scopes may use custom stacks.

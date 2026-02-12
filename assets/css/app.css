@@ -7,6 +7,11 @@
 @source "../../lib/nav_buddy2_demo_web";
 @source "../../deps/nav_buddy2/lib";
 
+/* Safelist heroicons used dynamically by NavBuddy2 navigation items.
+   These classes are generated at runtime from atom names like :home, :cog_6_tooth, etc.
+   Add any new icons used in your navigation here. */
+@source inline("hero-home hero-cog-6-tooth hero-squares-2x2 hero-folder hero-user hero-shield-check hero-chevron-left hero-chevron-down hero-search hero-x-mark hero-menu hero-arrow-right");
+
 /* A Tailwind plugin that makes "hero-#{ICON}" classes available.
    The heroicons installation itself is managed by your mix.exs */
 @plugin "../vendor/heroicons";
