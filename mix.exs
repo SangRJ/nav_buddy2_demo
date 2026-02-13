@@ -66,7 +66,7 @@ defmodule NavBuddy2Demo.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.2.0"},
       {:bandit, "~> 1.5"},
-      {:nav_buddy2, github: "SangRJ/nav_buddy2"}
+      {:nav_buddy2, "~> 0.2.0"}
     ]
   end
 
