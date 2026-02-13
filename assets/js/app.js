@@ -28,11 +28,13 @@ import topbar from "../vendor/topbar"
 import Alpine from "alpinejs"
 import persist from "@alpinejs/persist"
 import collapse from "@alpinejs/collapse"
-import NavBuddy2Plugin from "nav_buddy2/assets/nav_buddy2"
+
+import NavBuddy2Plugin from "nav_buddy2/assets/nav_buddy2" // Import the plugin
 
 Alpine.plugin(persist)
 Alpine.plugin(collapse)
-Alpine.plugin(NavBuddy2Plugin)
+Alpine.plugin(NavBuddy2Plugin) // Register it HERE
+
 
 window.Alpine = Alpine
 Alpine.start()

@@ -14,6 +14,10 @@ defmodule NavBuddy2DemoWeb.DemoPageLive do
   def render(assigns) do
     ~H"""
       <div class="max-w-4xl mx-auto space-y-8">
+
+       <div class="mt-8 flex justify-center">
+          <Layouts.theme_toggle />
+        </div>
         <div class="space-y-2">
           <h1 class="text-4xl font-bold">{@page_title}</h1>
           <p class="text-xl text-base-content/60">
@@ -42,9 +46,7 @@ defmodule NavBuddy2DemoWeb.DemoPageLive do
           </span>
         </div>
 
-        <div class="mt-8 flex justify-center">
-          <Layouts.theme_toggle />
-        </div>
+
       </div>
     """
   end
